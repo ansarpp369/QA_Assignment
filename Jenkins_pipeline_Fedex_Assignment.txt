@@ -1,0 +1,83 @@
+Started by user Ansar pp
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Fedex_Assignment
+The recommended git tool is: NONE
+using credential ac218165-cfff-4e68-95d3-c1b88dbb1821
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Fedex_Assignment\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/ansarpp369/QA_Assignment.git # timeout=10
+Fetching upstream changes from https://github.com/ansarpp369/QA_Assignment.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.27.0.windows.1'
+using GIT_ASKPASS to set credentials Test
+ > git.exe fetch --tags --force --progress -- https://github.com/ansarpp369/QA_Assignment.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 01062e4dbbe3560c0b7c820ef630d8ac56a05b44 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 01062e4dbbe3560c0b7c820ef630d8ac56a05b44 # timeout=10
+Commit message: "Add files via upload"
+First time build. Skipping changelog.
+[Fedex_Assignment] $ cmd /c call C:\windows\TEMP\jenkins10030390164452805884.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Fedex_Assignment>cd C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new 
+
+C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new>python -m robot -d results .\Tests\FedexTC.robot 
+[ ERROR ] Error in file 'C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\Resources\FedexWeb.robot' on line 2: Importing library 'Selenium Library' failed: ModuleNotFoundError: No module named 'Selenium Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new
+  C:\Users\Ansar_TYNL\Documents\Python\python37.zip
+  C:\Users\Ansar_TYNL\Documents\Python\DLLs
+  C:\Users\Ansar_TYNL\Documents\Python\lib
+  C:\Users\Ansar_TYNL\Documents\Python
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32\lib
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\Pythonwin
+[ WARN ] Imported resource file 'C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\Resources\PO\Menu.robot' is empty.
+[ ERROR ] Error in file 'C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\Resources\Common.robot' on line 2: Importing library 'Selenium Library' failed: ModuleNotFoundError: No module named 'Selenium Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new
+  C:\Users\Ansar_TYNL\Documents\Python\python37.zip
+  C:\Users\Ansar_TYNL\Documents\Python\DLLs
+  C:\Users\Ansar_TYNL\Documents\Python\lib
+  C:\Users\Ansar_TYNL\Documents\Python
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32\lib
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\Pythonwin
+==============================================================================
+FedexTC :: This is some basic info about the whole suite                      
+==============================================================================
+Validate User Laoding Main Page.                                      | PASS |
+------------------------------------------------------------------------------
+Validate User clicking Search                                         | PASS |
+------------------------------------------------------------------------------
+Validate Sign Up/Log In Option                                        | PASS |
+------------------------------------------------------------------------------
+Validate User clicking Track Options                                  | PASS |
+------------------------------------------------------------------------------
+Validate User clicking MultiTrack Options                             | PASS |
+------------------------------------------------------------------------------
+Verify_User_Id_Registration Page                                      | PASS |
+------------------------------------------------------------------------------
+Validate User clicking Help Option                                    | PASS |
+------------------------------------------------------------------------------
+Validate User clicking Ship Option                                    | PASS |
+------------------------------------------------------------------------------
+Verfy_Create_new_Account_page                                         | PASS |
+------------------------------------------------------------------------------
+Validate User clicking Rate_and_Transit Times                         | PASS |
+------------------------------------------------------------------------------
+FedexTC :: This is some basic info about the whole suite              | PASS |
+10 tests, 10 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\results\output.xml
+Log:     C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\results\log.html
+Report:  C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\results\report.html
+
+C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new>exit 0 
+Finished: SUCCESS
