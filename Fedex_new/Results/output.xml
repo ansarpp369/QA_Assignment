@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.7.6 on win32)" generated="20221028 17:25:03.648" rpa="false" schemaversion="3">
+<suite id="s1" name="FedexTC" source="C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\Tests\FedexTC.robot">
+<test id="s1-t1" name="Validate User Laoding Main Page." line="16">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:25:04.033" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:25:04.032" endtime="20221028 17:25:06.616"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:04.032" endtime="20221028 17:25:06.616"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:25:06.617" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:25:06.617" endtime="20221028 17:25:09.863"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:06.616" endtime="20221028 17:25:09.863"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:06.616" endtime="20221028 17:25:09.863"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:25:09.865" endtime="20221028 17:25:09.952"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:09.864" endtime="20221028 17:25:09.953"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:09.864" endtime="20221028 17:25:09.953"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:25:09.954" endtime="20221028 17:25:10.030"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:10.031" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:25:10.030" endtime="20221028 17:25:10.106"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:09.954" endtime="20221028 17:25:10.107"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:09.953" endtime="20221028 17:25:10.107"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:25:10.128" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:25:10.108" endtime="20221028 17:25:10.128"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:10.107" endtime="20221028 17:25:10.128"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:10.107" endtime="20221028 17:25:10.128"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:25:10.128" endtime="20221028 17:25:12.469"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:10.128" endtime="20221028 17:25:12.469"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:04.030" endtime="20221028 17:25:12.469"/>
+</test>
+<test id="s1-t2" name="Validate User clicking Search" line="21">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:25:12.471" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:25:12.471" endtime="20221028 17:25:14.430"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:12.470" endtime="20221028 17:25:14.430"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:25:14.432" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:25:14.431" endtime="20221028 17:25:16.020"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:14.431" endtime="20221028 17:25:16.021"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:14.430" endtime="20221028 17:25:16.021"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:25:16.022" endtime="20221028 17:25:16.048"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:16.021" endtime="20221028 17:25:16.048"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:16.021" endtime="20221028 17:25:16.048"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:25:16.049" endtime="20221028 17:25:16.074"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:16.074" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:25:16.074" endtime="20221028 17:25:16.164"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:16.049" endtime="20221028 17:25:16.165"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:16.048" endtime="20221028 17:25:16.165"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:25:16.188" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:25:16.166" endtime="20221028 17:25:16.188"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:16.166" endtime="20221028 17:25:16.188"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:16.165" endtime="20221028 17:25:16.188"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:16.190" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:25:16.189" endtime="20221028 17:25:16.304"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:25:26.304" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221028 17:25:16.304" endtime="20221028 17:25:26.304"/>
+</kw>
+<kw name="Search Icon" library="FedexWeb">
+<kw name="Search Icon" library="Search">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>Search</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:26.307" level="INFO">Clicking image 'Search'.</msg>
+<status status="PASS" starttime="20221028 17:25:26.306" endtime="20221028 17:25:26.415"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:26.306" endtime="20221028 17:25:26.415"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:26.306" endtime="20221028 17:25:26.415"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:25:31.419" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:25:26.416" endtime="20221028 17:25:31.419"/>
+</kw>
+<kw name="Search Products" library="FedexWeb">
+<kw name="Search for Item" library="Search">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=fxg-search-text</arg>
+<arg>${SEARCH_ITEM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:31.421" level="INFO">Typing text 'Redelivery' into text field 'id=fxg-search-text'.</msg>
+<status status="PASS" starttime="20221028 17:25:31.420" endtime="20221028 17:25:31.565"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:31.420" endtime="20221028 17:25:31.566"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:31.419" endtime="20221028 17:25:31.566"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:25:41.567" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221028 17:25:31.567" endtime="20221028 17:25:41.567"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:25:41.568" endtime="20221028 17:25:44.049"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:41.567" endtime="20221028 17:25:44.049"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:12.470" endtime="20221028 17:25:44.049"/>
+</test>
+<test id="s1-t3" name="Validate Sign Up/Log In Option" line="32">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:25:44.052" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:25:44.051" endtime="20221028 17:25:45.785"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:44.051" endtime="20221028 17:25:45.785"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:25:45.786" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:25:45.786" endtime="20221028 17:25:47.471"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:45.785" endtime="20221028 17:25:47.472"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:45.785" endtime="20221028 17:25:47.472"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:25:47.473" endtime="20221028 17:25:47.491"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:47.473" endtime="20221028 17:25:47.492"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:47.472" endtime="20221028 17:25:47.492"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:25:47.494" endtime="20221028 17:25:47.514"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:47.515" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:25:47.514" endtime="20221028 17:25:47.581"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:47.493" endtime="20221028 17:25:47.581"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:47.493" endtime="20221028 17:25:47.581"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:25:47.597" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:25:47.582" endtime="20221028 17:25:47.597"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:47.582" endtime="20221028 17:25:47.598"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:47.581" endtime="20221028 17:25:47.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:47.599" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:25:47.598" endtime="20221028 17:25:47.683"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:25:52.685" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:25:47.683" endtime="20221028 17:25:52.685"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:25:52.686" endtime="20221028 17:25:52.702"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:52.685" endtime="20221028 17:25:52.703"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:52.685" endtime="20221028 17:25:52.703"/>
+</kw>
+<kw name="Sign Up/Log In Image" library="FedexWeb">
+<kw name="Click Sign Up/Log In Image" library="SignIn">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>Sign in to Fedex.com</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:52.704" level="INFO">Clicking image 'Sign in to Fedex.com'.</msg>
+<status status="PASS" starttime="20221028 17:25:52.703" endtime="20221028 17:25:52.797"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:52.703" endtime="20221028 17:25:52.797"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:52.703" endtime="20221028 17:25:52.797"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:25:57.799" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:25:52.798" endtime="20221028 17:25:57.799"/>
+</kw>
+<kw name="LOG-IN option" library="FedexWeb">
+<kw name="Click LOG-IN option" library="SignIn">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#global-login-wrapper &gt; div &gt; div &gt; div &gt; div:nth-child(1) &gt; div &gt; a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:25:57.801" level="INFO">Clicking element 'css=#global-login-wrapper &gt; div &gt; div &gt; div &gt; div:nth-child(1) &gt; div &gt; a'.</msg>
+<status status="PASS" starttime="20221028 17:25:57.800" endtime="20221028 17:25:59.082"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:57.800" endtime="20221028 17:25:59.083"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:57.799" endtime="20221028 17:25:59.083"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:26:09.084" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221028 17:25:59.084" endtime="20221028 17:26:09.084"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:26:09.085" endtime="20221028 17:26:11.590"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:09.084" endtime="20221028 17:26:11.591"/>
+</kw>
+<status status="PASS" starttime="20221028 17:25:44.050" endtime="20221028 17:26:11.591"/>
+</test>
+<test id="s1-t4" name="Validate User clicking Track Options" line="45">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:26:11.592" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:26:11.592" endtime="20221028 17:26:13.146"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:11.592" endtime="20221028 17:26:13.146"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:26:13.147" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:26:13.147" endtime="20221028 17:26:14.998"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:13.147" endtime="20221028 17:26:14.999"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:13.146" endtime="20221028 17:26:14.999"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:15.003" endtime="20221028 17:26:15.041"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:15.001" endtime="20221028 17:26:15.042"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:15.000" endtime="20221028 17:26:15.042"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:15.043" endtime="20221028 17:26:15.062"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:15.063" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:26:15.062" endtime="20221028 17:26:15.143"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:15.042" endtime="20221028 17:26:15.143"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:15.042" endtime="20221028 17:26:15.144"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:26:15.166" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:26:15.145" endtime="20221028 17:26:15.167"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:15.144" endtime="20221028 17:26:15.167"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:15.144" endtime="20221028 17:26:15.167"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:15.168" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:26:15.167" endtime="20221028 17:26:15.267"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:26:20.270" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:26:15.268" endtime="20221028 17:26:20.270"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:20.271" endtime="20221028 17:26:20.288"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:20.271" endtime="20221028 17:26:20.288"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:20.270" endtime="20221028 17:26:20.288"/>
+</kw>
+<kw name="Single Track" library="FedexWeb">
+<kw name="Click Single-Track Button" library="Track">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="btnSingleTrack"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:20.289" level="INFO">Clicking button '//*[@id="btnSingleTrack"]'.</msg>
+<status status="PASS" starttime="20221028 17:26:20.289" endtime="20221028 17:26:20.416"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:20.289" endtime="20221028 17:26:20.417"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:20.288" endtime="20221028 17:26:20.418"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:26:25.420" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:26:20.418" endtime="20221028 17:26:25.420"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:26:25.421" endtime="20221028 17:26:27.778"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:25.421" endtime="20221028 17:26:27.778"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:11.591" endtime="20221028 17:26:27.778"/>
+</test>
+<test id="s1-t5" name="Validate User clicking MultiTrack Options" line="56">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:26:27.781" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:26:27.780" endtime="20221028 17:26:29.332"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:27.779" endtime="20221028 17:26:29.332"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:26:29.333" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:26:29.333" endtime="20221028 17:26:30.764"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:29.333" endtime="20221028 17:26:30.764"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:29.333" endtime="20221028 17:26:30.765"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:30.767" endtime="20221028 17:26:30.784"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:30.766" endtime="20221028 17:26:30.784"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:30.765" endtime="20221028 17:26:30.784"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:30.785" endtime="20221028 17:26:30.801"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:30.801" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:26:30.801" endtime="20221028 17:26:30.880"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:30.785" endtime="20221028 17:26:30.880"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:30.784" endtime="20221028 17:26:30.880"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:26:30.895" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:26:30.881" endtime="20221028 17:26:30.895"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:30.880" endtime="20221028 17:26:30.896"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:30.880" endtime="20221028 17:26:30.896"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:30.896" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:26:30.896" endtime="20221028 17:26:30.972"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:26:35.975" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:26:30.972" endtime="20221028 17:26:35.975"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:35.976" endtime="20221028 17:26:35.993"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:35.975" endtime="20221028 17:26:35.993"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:35.975" endtime="20221028 17:26:35.993"/>
+</kw>
+<kw name="Multitracking" library="FedexWeb">
+<kw name="Click Multitracking Link" library="Track">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="cubeTwoPar-tab"]/div/div[1]/div/div[1]/div[1]/div/div/div[1]/div/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:35.995" level="INFO">Clicking link '//*[@id="cubeTwoPar-tab"]/div/div[1]/div/div[1]/div[1]/div/div/div[1]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:26:35.995" endtime="20221028 17:26:36.095"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:35.994" endtime="20221028 17:26:36.096"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:35.994" endtime="20221028 17:26:36.096"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:26:41.099" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:26:36.096" endtime="20221028 17:26:41.099"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:26:41.100" endtime="20221028 17:26:43.424"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:41.100" endtime="20221028 17:26:43.424"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:27.779" endtime="20221028 17:26:43.424"/>
+</test>
+<test id="s1-t6" name="Verify_User_Id_Registration Page" line="66">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:26:43.427" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:26:43.426" endtime="20221028 17:26:45.279"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:43.426" endtime="20221028 17:26:45.280"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:26:45.281" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:26:45.281" endtime="20221028 17:26:47.283"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:45.280" endtime="20221028 17:26:47.283"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:45.280" endtime="20221028 17:26:47.283"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:47.284" endtime="20221028 17:26:47.303"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:47.284" endtime="20221028 17:26:47.303"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:47.283" endtime="20221028 17:26:47.303"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:47.304" endtime="20221028 17:26:47.322"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:47.323" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:26:47.323" endtime="20221028 17:26:47.410"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:47.304" endtime="20221028 17:26:47.411"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:47.303" endtime="20221028 17:26:47.411"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:26:47.437" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:26:47.412" endtime="20221028 17:26:47.437"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:47.412" endtime="20221028 17:26:47.437"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:47.411" endtime="20221028 17:26:47.438"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:47.438" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:26:47.438" endtime="20221028 17:26:47.544"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:26:52.544" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:26:47.544" endtime="20221028 17:26:52.544"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:26:52.545" endtime="20221028 17:26:52.562"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:52.545" endtime="20221028 17:26:52.563"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:52.544" endtime="20221028 17:26:52.563"/>
+</kw>
+<kw name="Sign Up/Log In Image" library="FedexWeb">
+<kw name="Click Sign Up/Log In Image" library="SignIn">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>Sign in to Fedex.com</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:52.564" level="INFO">Clicking image 'Sign in to Fedex.com'.</msg>
+<status status="PASS" starttime="20221028 17:26:52.563" endtime="20221028 17:26:52.648"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:52.563" endtime="20221028 17:26:52.649"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:52.563" endtime="20221028 17:26:52.649"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:26:57.651" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:26:52.649" endtime="20221028 17:26:57.651"/>
+</kw>
+<kw name="LOG-IN option" library="FedexWeb">
+<kw name="Click LOG-IN option" library="SignIn">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#global-login-wrapper &gt; div &gt; div &gt; div &gt; div:nth-child(1) &gt; div &gt; a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:26:57.652" level="INFO">Clicking element 'css=#global-login-wrapper &gt; div &gt; div &gt; div &gt; div:nth-child(1) &gt; div &gt; a'.</msg>
+<status status="PASS" starttime="20221028 17:26:57.652" endtime="20221028 17:26:58.841"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:57.652" endtime="20221028 17:26:58.841"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:57.651" endtime="20221028 17:26:58.841"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:03.843" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:26:58.841" endtime="20221028 17:27:03.843"/>
+</kw>
+<kw name="User ID creation" library="FedexWeb">
+<kw name="Create User ID" library="Login">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="createUserId"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:03.844" level="INFO">Clicking link '//*[@id="createUserId"]'.</msg>
+<status status="PASS" starttime="20221028 17:27:03.844" endtime="20221028 17:27:04.730"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:09.730" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:04.730" endtime="20221028 17:27:09.730"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>fedex.com Login Registration</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:09.730" endtime="20221028 17:27:09.753"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:03.844" endtime="20221028 17:27:09.753"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:03.843" endtime="20221028 17:27:09.753"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:27:09.753" endtime="20221028 17:27:12.087"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:09.753" endtime="20221028 17:27:12.087"/>
+</kw>
+<status status="PASS" starttime="20221028 17:26:43.425" endtime="20221028 17:27:12.087"/>
+</test>
+<test id="s1-t7" name="Validate User clicking Help Option" line="79">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:27:12.090" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:27:12.090" endtime="20221028 17:27:13.635"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:12.089" endtime="20221028 17:27:13.635"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:27:13.636" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:27:13.636" endtime="20221028 17:27:15.360"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:13.636" endtime="20221028 17:27:15.361"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:13.635" endtime="20221028 17:27:15.361"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:15.362" endtime="20221028 17:27:15.393"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:15.362" endtime="20221028 17:27:15.393"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:15.361" endtime="20221028 17:27:15.394"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:15.395" endtime="20221028 17:27:15.415"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:15.415" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:27:15.415" endtime="20221028 17:27:15.497"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:15.394" endtime="20221028 17:27:15.497"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:15.394" endtime="20221028 17:27:15.497"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:27:15.517" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:27:15.498" endtime="20221028 17:27:15.517"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:15.498" endtime="20221028 17:27:15.517"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:15.497" endtime="20221028 17:27:15.517"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:15.518" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:27:15.517" endtime="20221028 17:27:15.598"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:20.601" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:15.598" endtime="20221028 17:27:20.601"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:20.602" endtime="20221028 17:27:20.621"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:20.601" endtime="20221028 17:27:20.621"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:20.601" endtime="20221028 17:27:20.622"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:25.623" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:20.622" endtime="20221028 17:27:25.623"/>
+</kw>
+<kw name="Help Option" library="FedexWeb">
+<kw name="Click Help Option" library="Help">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="cubeTwoPar-tab"]/div/div[1]/div/div[1]/div[1]/div/div/div[3]/div/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:25.625" level="INFO">Clicking link '//*[@id="cubeTwoPar-tab"]/div/div[1]/div/div[1]/div[1]/div/div/div[3]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:27:25.624" endtime="20221028 17:27:25.742"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:25.624" endtime="20221028 17:27:25.743"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:25.623" endtime="20221028 17:27:25.743"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:30.744" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:25.743" endtime="20221028 17:27:30.744"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:27:30.745" endtime="20221028 17:27:33.082"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:30.744" endtime="20221028 17:27:33.083"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:12.088" endtime="20221028 17:27:33.083"/>
+</test>
+<test id="s1-t8" name="Validate User clicking Ship Option" line="90">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:27:33.086" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:27:33.085" endtime="20221028 17:27:34.481"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:33.084" endtime="20221028 17:27:34.481"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:27:34.482" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:27:34.482" endtime="20221028 17:27:36.029"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:34.481" endtime="20221028 17:27:36.029"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:34.481" endtime="20221028 17:27:36.030"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:36.032" endtime="20221028 17:27:36.051"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:36.031" endtime="20221028 17:27:36.051"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:36.030" endtime="20221028 17:27:36.051"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:36.053" endtime="20221028 17:27:36.074"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:36.075" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:27:36.074" endtime="20221028 17:27:36.157"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:36.053" endtime="20221028 17:27:36.157"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:36.052" endtime="20221028 17:27:36.158"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:27:36.181" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:27:36.158" endtime="20221028 17:27:36.182"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:36.158" endtime="20221028 17:27:36.182"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:36.158" endtime="20221028 17:27:36.182"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:36.183" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:27:36.182" endtime="20221028 17:27:36.289"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:41.290" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:36.289" endtime="20221028 17:27:41.290"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:41.291" endtime="20221028 17:27:41.313"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:41.291" endtime="20221028 17:27:41.313"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:41.290" endtime="20221028 17:27:41.314"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:46.315" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:41.314" endtime="20221028 17:27:46.315"/>
+</kw>
+<kw name="Ship Option" library="FedexWeb">
+<kw name="Click Ship Option" library="Ship">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>//*[@id="cubeThreePar"]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:46.316" level="INFO">Double clicking element '//*[@id="cubeThreePar"]'.</msg>
+<status status="PASS" starttime="20221028 17:27:46.316" endtime="20221028 17:27:47.686"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Enter your user ID and password to log in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:47.686" endtime="20221028 17:27:48.755"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:46.315" endtime="20221028 17:27:48.755"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:46.315" endtime="20221028 17:27:48.755"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:27:53.758" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:48.756" endtime="20221028 17:27:53.758"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:27:53.758" endtime="20221028 17:27:56.174"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:53.758" endtime="20221028 17:27:56.174"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:33.084" endtime="20221028 17:27:56.174"/>
+</test>
+<test id="s1-t9" name="Verfy_Create_new_Account_page" line="101">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:27:56.176" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:27:56.175" endtime="20221028 17:27:57.628"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:56.175" endtime="20221028 17:27:57.629"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:27:57.631" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:27:57.630" endtime="20221028 17:27:59.255"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:57.629" endtime="20221028 17:27:59.256"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:57.629" endtime="20221028 17:27:59.256"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:59.257" endtime="20221028 17:27:59.276"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:59.256" endtime="20221028 17:27:59.276"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:59.256" endtime="20221028 17:27:59.276"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:27:59.277" endtime="20221028 17:27:59.303"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:59.304" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:27:59.303" endtime="20221028 17:27:59.372"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:59.277" endtime="20221028 17:27:59.372"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:59.276" endtime="20221028 17:27:59.372"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:27:59.391" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:27:59.374" endtime="20221028 17:27:59.391"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:59.373" endtime="20221028 17:27:59.391"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:59.373" endtime="20221028 17:27:59.391"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:27:59.392" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:27:59.392" endtime="20221028 17:27:59.490"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:28:04.492" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:27:59.491" endtime="20221028 17:28:04.492"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:28:04.493" endtime="20221028 17:28:04.513"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:04.493" endtime="20221028 17:28:04.514"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:04.492" endtime="20221028 17:28:04.514"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:28:09.517" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:28:04.514" endtime="20221028 17:28:09.517"/>
+</kw>
+<kw name="New account" library="FedexWeb">
+<kw name="Open new account" library="Account">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="mr-link"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221028 17:28:09.518" level="INFO">Clicking link '//*[@id="mr-link"]'.</msg>
+<status status="PASS" starttime="20221028 17:28:09.518" endtime="20221028 17:28:10.881"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Open an account</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:28:10.881" endtime="20221028 17:28:10.912"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:09.517" endtime="20221028 17:28:10.913"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:09.517" endtime="20221028 17:28:10.913"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:28:15.913" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:28:10.913" endtime="20221028 17:28:15.913"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:28:15.914" endtime="20221028 17:28:18.260"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:15.913" endtime="20221028 17:28:18.260"/>
+</kw>
+<status status="PASS" starttime="20221028 17:27:56.175" endtime="20221028 17:28:18.261"/>
+</test>
+<test id="s1-t10" name="Validate User clicking Rate_and_Transit Times" line="112">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 17:28:18.263" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221028 17:28:18.263" endtime="20221028 17:28:19.863"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:18.262" endtime="20221028 17:28:19.863"/>
+</kw>
+<kw name="Search for Load" library="FedexWeb">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221028 17:28:19.865" level="INFO">Opening url 'https://www.fedex.com/en-gb/home.html'</msg>
+<status status="PASS" starttime="20221028 17:28:19.865" endtime="20221028 17:28:21.690"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:19.864" endtime="20221028 17:28:21.690"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:19.863" endtime="20221028 17:28:21.690"/>
+</kw>
+<kw name="Search for Word" library="FedexWeb">
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Netherlands</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:28:21.693" endtime="20221028 17:28:21.720"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:21.692" endtime="20221028 17:28:21.720"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:21.691" endtime="20221028 17:28:21.721"/>
+</kw>
+<kw name="Click Language Options" library="FedexWeb">
+<kw name="Language" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>United Kingdom</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:28:21.722" endtime="20221028 17:28:21.740"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:28:21.742" level="INFO">Clicking element 'xpath=/html'.</msg>
+<status status="PASS" starttime="20221028 17:28:21.741" endtime="20221028 17:28:21.850"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:21.721" endtime="20221028 17:28:21.851"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:21.721" endtime="20221028 17:28:21.851"/>
+</kw>
+<kw name="Click Cookies" library="FedexWeb">
+<kw name="Cookies" library="LandingPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="fxg-dropdown-signIn"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221028 17:28:21.875" level="INFO">Current page contains element 'xpath=//*[@id="fxg-dropdown-signIn"]'.</msg>
+<status status="PASS" starttime="20221028 17:28:21.852" endtime="20221028 17:28:21.876"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:21.851" endtime="20221028 17:28:21.877"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:21.851" endtime="20221028 17:28:21.877"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_WINDOW_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:28:21.879" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221028 17:28:21.877" endtime="20221028 17:28:22.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:28:27.061" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:28:22.058" endtime="20221028 17:28:27.061"/>
+</kw>
+<kw name="Verify Main Page" library="FedexWeb">
+<kw name="Verify Main Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign Up/Log In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:28:27.062" endtime="20221028 17:28:27.082"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:27.061" endtime="20221028 17:28:27.082"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:27.061" endtime="20221028 17:28:27.083"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:28:32.083" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 17:28:27.083" endtime="20221028 17:28:32.083"/>
+</kw>
+<kw name="Rate&amp;Transit Times" library="FedexWeb">
+<kw name="Check Rate and Transmit" library="Rate&amp;Transit">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>//*[@id="cubeOnePar"]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20221028 17:28:32.084" level="INFO">Double clicking element '//*[@id="cubeOnePar"]/button'.</msg>
+<status status="PASS" starttime="20221028 17:28:32.084" endtime="20221028 17:28:32.443"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>From</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 17:28:32.443" endtime="20221028 17:28:32.474"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:32.084" endtime="20221028 17:28:32.475"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:32.083" endtime="20221028 17:28:32.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 17:28:42.476" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221028 17:28:32.475" endtime="20221028 17:28:42.476"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 17:28:42.477" endtime="20221028 17:28:44.877"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:42.476" endtime="20221028 17:28:44.878"/>
+</kw>
+<status status="PASS" starttime="20221028 17:28:18.261" endtime="20221028 17:28:44.878"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" starttime="20221028 17:25:03.650" endtime="20221028 17:28:44.879"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="0" skip="0" id="s1" name="FedexTC">FedexTC</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221028 17:25:03.682" level="ERROR">Error in file 'C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\Resources\FedexWeb.robot' on line 2: Importing library 'Selenium Library' failed: ModuleNotFoundError: No module named 'Selenium Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new
+  C:\Users\Ansar_TYNL\Documents\Python\python37.zip
+  C:\Users\Ansar_TYNL\Documents\Python\DLLs
+  C:\Users\Ansar_TYNL\Documents\Python\lib
+  C:\Users\Ansar_TYNL\Documents\Python
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32\lib
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20221028 17:25:04.002" level="WARN">Imported resource file 'C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\Resources\PO\Menu.robot' is empty.</msg>
+<msg timestamp="20221028 17:25:04.029" level="ERROR">Error in file 'C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new\Resources\Common.robot' on line 2: Importing library 'Selenium Library' failed: ModuleNotFoundError: No module named 'Selenium Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Ansar_TYNL\PycharmProjects\Fedex_new
+  C:\Users\Ansar_TYNL\Documents\Python\python37.zip
+  C:\Users\Ansar_TYNL\Documents\Python\DLLs
+  C:\Users\Ansar_TYNL\Documents\Python\lib
+  C:\Users\Ansar_TYNL\Documents\Python
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\win32\lib
+  C:\Users\Ansar_TYNL\Documents\Python\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
